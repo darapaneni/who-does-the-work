@@ -1,0 +1,11 @@
+.streamlit/secrets.toml
+local_config.toml
+.venv/
+data/responses_backup.csv
+__pycache__/
+.pytest_cache/
+
+cloudflared.log
+data/live_state.json
+data/backup_*.csv
+data/exercise/

@@ -1,0 +1,22 @@
+# Settings for running the exercise on your own computer (localhost).
+# The launchers copy this file to local_config.toml the first time; edit local_config.toml, not this file.
+# local_config.toml is git-ignored because it holds the facilitator password.
+
+[local]
+# Where responses are written, relative to this folder. The default puts the CSV in your paper repo
+# at <repo>/data/exercise/responses.csv when this app lives in <repo>/exercise_app/.
+csv_path   = "../data/exercise/responses.csv"
+# Commit the CSV to the local git repo after every submission (runs in the background).
+git_commit = false
+# Also push to the remote after each commit (needs git credentials already set up on this computer).
+git_push   = false
+git_remote = "origin"
+
+[app]
+# Opens the facilitator screen: http://localhost:8501/?view=facilitator  (change it before a public seminar)
+facilitator_password  = "change-me"
+# Optional: only accept these session codes (case-insensitive). Leave empty to accept any code.
+session_codes         = []
+open_rounds           = [1, 2, 3]
+round3_eps_multiplier = 0.5
+round3_rho_multiplier = 0.5
